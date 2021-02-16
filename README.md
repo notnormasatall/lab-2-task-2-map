@@ -1,18 +1,18 @@
-# Призначення модулю
+# Module descriprion
 
-Користувач вводить координати та рік, який його цікавить. Модуль
-повертає карту з 10< найближчими локаціями зйомок фільмів у тому році.
-Локація, введена користувачем, позначена червоною міткою, локації зйомок - синіми.
-Усі мітки з'єднані з головною блакитною лінією. При натисканні на мітку
-користувач може ознайомитися з базовою інформацією про фільм (назва, рік, адреса, відстань
-від введеної локації).
+The user enters coordinates and a year. The module
+returns a map with the 10< closest filming locations in that year.
+The location entered by the user is marked with a red mark, the filming location with a blue one.
+All markers are connected to the main with a blue line. With a click on a marker
+the user gets basic information about the film (title, year, address, distance
+from the entered location).
 
-# Короткий висновок
+# Result
 
-Програма допомагає зробити короткий аналіз того, скільки фільмів і де конкретно
-були зняті у певний рік та біля певної локації. 
+The program helps to make a brief analysis of how many movies and where
+were filmed in a certain year near a certain location.
 
-# Приклад запуску
+# Example of the running process
 
 Ввід здійснюється в одному рядку через пробіл (рік, широта, довгота)
 
@@ -22,4 +22,22 @@
 ![text](Ukraine.jpg?raw=true "text")
 ### 2011 38.9072 77.03692011 38.9072 77.0369 - China
 ![text](China.jpg?raw=true "text")
-# Опис структури html-файлу та тегів розмітки, які були згенеровані
+
+## Description of html file structure and markup tags
+
+map.html file has a basic html structure.
+
+<!DOCTYPE html> defines the file's markup language.
+
+The main information of the file stays between the <head> </head> tags.
+<script> </script> tags define some important information, <style>
+</style> tags define css style of the file.
+
+<body> </body> tags create the html fileand contain information 
+that is displayed in the web browser (in this case it is map Class).
+
+<script> </script> consists from all actions called in the main.py
+module, but written in js.
+
+## License
+[MIT](https://github.com/notnormasatall/lab-2-task-2-map/blob/main/LICENSE)
